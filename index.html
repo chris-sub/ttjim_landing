@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>TT.JIM - Judiciary of Trinidad and Tobago</title>
+		<link rel="icon" href="https://milligram.github.io/images/icon.png">
+ 	</head>
+	<style>
+	@font-face {
+    font-family: Scala;
+    src: url("fonts/Scala.otf") format("opentype");
+}
+
+@font-face {
+    font-family: ScalaSans;
+    font-weight: bold;
+    src: url("fonts/ScalaSans.otf") format("opentype");
+}
+	
+	
+	* {margin:0; padding:0}
+	a {text-decoration:none;}
+	hr {border-top:none; border-left:none; border-right:none}
+	main header {background:url("img/hoj-bg.jpg"); color:#FFF; text-align:center; background-size:100%}
+	main header h1 {font-family:Scala; letter-spacing:2px; font-size:7rem; font-weight:normal}
+	main header h1 i {color:#003845; font-style:normal;}
+	main header .subtitle {
+	    font-size: .9em;
+		border-top: 1px solid #FFF;
+		border-bottom: 1px solid #FFF;
+		padding: 10px 25px;
+		display: inline-block;
+		letter-spacing: 1px;
+		margin-top: 20px;
+		font-family: ScalaSans;
+		text-transform: uppercase;
+	}
+	main header p {font-size:2rem; opacity:.9;}
+	header .container {text-align:center; padding:75px 0 100px;}
+
+	footer {clear:both; margin:100px 0 25px; text-align:center; font-family:Arial; color:#ababab; font-size:.9em}
+	
+	
+	
+	.flex-container {
+  display: flex;
+  justify-content: center;
+  position:relative;
+  top:-50px;
+}
+
+.flex-container > div.tile {
+  text-align: center;
+  line-height: 75px;  
+  margin:0 20px; 
+  display:block;
+  text-align:center; 
+  width:250px; 
+  height:300px;   
+}
+
+
+	.flex-container > div.tile a {background:#FFF; display:block; border-radius:3px; padding:20px 20px 0; color:#909090; text-align:center; box-shadow:0 2px 4px rgba(0,0,0,0.3); transition:.3s;}
+
+
+
+	.flex-container > div.tile a img {
+		width:96%; 
+		opacity:.6; 
+		transition:.3s;
+	}
+	.flex-container > div.tile a {
+		min-height:50px;
+		text-align:center; vertical-align:middle; margin:15px 0; line-height:1.1em; font-family:ScalaSans; font-size:2rem;
+	}
+	div.tile h1 {font-size:.65em; padding:15px 0; line-height:1.2em; height:50px; color:#656d6f; letter-spacing:.5px; font-family:ScalaSans; }
+	div.tile hr {border-bottom:3px solid #dadada; width:45%; margin:0 auto; transition:.3s;}
+	div.tile a:hover img {width:100%; opacity:1}
+	div.tile a:hover h1 {color:#003845}
+	div.tile a:hover hr {border-color:#003845}
+	#logo {width:35px; margin-bottom:15px;}
+	header .inner {background:rgba(191, 49, 26, .95)}
+	</style>
+	<body>
+
+		<main class="wrapper">			
+			<header>
+			<div class="inner">
+				<div class="container">
+					<h1>TT<i>.</i>JIM</h1>
+					<p class="subtitle">Trinidad and Tobago Judicial Information Management</p>
+				</div>
+				</div>
+			</header>
+			<section class="container">
+			<div class="flex-container">
+				<div class='tile'><a href="https://childcms.ttlawcourts.org"><img src='img/cc.png' /><h1>CHILDREN COURT</h1><hr/></a></div>  
+				<div class='tile'><a href=""><img src='img/hoj.png' /><h1>DISTRICT CRIMINAL COURT</h1><hr/></a></div>
+			</div>
+			</section>
+
+			<footer class="footer">
+				<section class="container">
+				<img src='img/logo.svg' alt='Judiciary of Trinidad and Tobago' id='logo' />
+					<p>For assistance call helpdesk at <b>62-TTLAW</b> EXT <b>2246</b></p>
+				</section>
+			</footer>
+
+		</main>
+
+ 
+	</body>
+</html>
