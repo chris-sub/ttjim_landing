@@ -48,21 +48,30 @@
         font-weight: normal
     }
     
+	main header #logo {    
+		display: block;
+		height: 175px;
+		margin: 0 auto;
+	}
+		
     main header h1 i {
         color: #003845;
         font-style: normal;
     }
-    
-    main header .subtitle {
-        font-size: .9em;
-        border-top: 1px solid #FFF;
-        border-bottom: 1px solid #FFF;
-        padding: 10px 25px;
-        display: inline-block;
-        letter-spacing: 1px;
-        margin-top: 20px;
-        font-family: ScalaSans;
-        text-transform: uppercase;
+    #main-section {text-align:center}
+    .subtitle {
+        font-size: 1.2em;
+		padding: 25px 35px;
+		display: inline-block;
+		border-radius: 15px;
+		background: #FFF;
+		margin: 20px auto;
+		position: relative;
+		box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+		top: -55px;
+		color: #afafaf;
+		font-family: ScalaSans;
+		text-transform: uppercase;
     }
     
     main header p {
@@ -72,7 +81,7 @@
     
     header .container {
         text-align: center;
-        padding: 75px 0 100px;
+        padding: 60px 0 90px;
     }
     
     footer {
@@ -87,8 +96,6 @@
     .flex-container {
         display: flex;
         justify-content: center;
-        position: relative;
-        top: -50px;
     }
     
     .flex-container > div.tile {
@@ -158,13 +165,13 @@
         border-color: #003845
     }
     
-    #logo {
+    #foot-logo {
         width: 35px;
         margin-bottom: 15px;
     }
     
     header .inner {
-        background: rgba(191, 49, 26, .95)
+        background:radial-gradient(circle at center bottom, rgba(255,255,253,.85), #FFF);
     }
     
     @media screen and (max-width: 992px) {
@@ -183,12 +190,12 @@
         <header>
             <div class="inner">
                 <div class="container">
-                    <h1>TT<i>.</i>JIM</h1>
-                    <p class="subtitle">Trinidad and Tobago · Judicial Information Management</p>
+					<img src="img/ttjim.svg" alt="TT.JIM Logo" id="logo" />
                 </div>
             </div>
         </header>
-        <section class="container">
+        <section class="container" id="main-section">
+            <p class="subtitle">Trinidad and Tobago · Judicial Information Management</p>
             <div class="flex-container">
                 <div class='tile'>
                     <a href="https://childcms.ttlawcourts.org"><img src='img/cc.png' />
@@ -207,7 +214,7 @@
 
         <footer class="footer">
             <section class="container">
-                <img src='img/logo.svg' alt='Judiciary of Trinidad and Tobago' id='logo' />
+                <img src='img/logo.svg' alt='Judiciary of Trinidad and Tobago' id='foot-logo' />
                 <p>For assistance call helpdesk at <b>62-TTLAW</b> EXT <b>2246</b></p>
             </section>
         </footer>
