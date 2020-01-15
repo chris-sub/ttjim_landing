@@ -27,7 +27,7 @@
     a {
         text-decoration: none;
     }
-    
+    .center {text-align:center;}
     hr {
         border-top: none;
         border-left: none;
@@ -169,7 +169,8 @@
         width: 35px;
         margin-bottom: 15px;
     }
-    
+    .howto-link {display:inline-block; padding:15px 20px; border-radius:20px; font-weight:bold; transition:.5s; letter-spacing:2px; border:2px solid #003845; text-align:center; color:#003845; margin:55px auto 0; font-family:Helvetica}
+	.howto-link:hover {background:#003845; color:#FFF;}
     header .inner {
         background:radial-gradient(circle at center bottom, rgba(255,255,253,.85), #FFF);
     }
@@ -177,6 +178,20 @@
     @media screen and (max-width: 992px) {
         .flex-container > div.tile {
             width: 175px;
+        }
+        .flex-container > div.tile a {
+            padding: 10px 10px 0
+        }
+    }
+	
+	@media screen and (max-width: 600px) {
+		.flex-container {display:block}
+		.flex-container > div.tile a img {
+			width:50px;
+		}
+        .flex-container > div.tile {
+            width: 100%;
+			height:auto;
         }
         .flex-container > div.tile a {
             padding: 10px 10px 0
@@ -204,14 +219,20 @@
                     </a>
                 </div>
                 <div class='tile'>
-                    <a href="http://districtcrim.ttlawcourts.org"><img src='img/hoj.png' />
+                    <a href="https://districtcrim.ttlawcourts.org"><img src='img/hoj.png' />
                         <h1>DISTRICT CRIMINAL COURT</h1>
+                        <hr/>
+                    </a>
+                </div>
+				<div class='tile'>
+                    <a href="https://familycrim.ttlawcourts.org"><img src='img/fc.png' />
+                        <h1>FAMILY COURT</h1>
                         <hr/>
                     </a>
                 </div>
             </div>
         </section>
-
+		<div class="center"><a href="https://sp.ttlawcourts.org/ttjim/_layouts/15/start.aspx#/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fttjim%2FShared%20Documents%2FTTJIM%5FHow%5FTos&FolderCTID=0x012000B396F07A43F36049B68F0BB8903C4692&View=%7B865B2E2B%2DE9A9%2D40A9%2D9558%2D3A6B1ED29DE8%7D" target="_blank" class="howto-link">TT.JIM How-To's</a></div>
         <footer class="footer">
             <section class="container">
                 <img src='img/logo.svg' alt='Judiciary of Trinidad and Tobago' id='foot-logo' />
