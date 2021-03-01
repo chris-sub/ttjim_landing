@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Criminal Court Training Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="css\ttjim-manual.css" />
+  <link rel="stylesheet" href="css\layout-overrides.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<section>
+	<img src="./images/ttjim-logo.png" />
+	<h3>Version 2.0 (Criminal Division)</h3>
+</section>
+
+
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#tt.jim---the-court-case-management-system">TT.jim - The Court Case Management System</a>
+<ul>
+<li><a href="#copyright">Copyright</a></li>
+<li><a href="#acknowledgements">Acknowledgements</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#welcome">Welcome</a></li>
+</ul></li>
+<li><a href="#how-to-login-to-tt.jim">How to Login to TT.jim</a></li>
+<li><a href="#searching-for-a-party">Searching for a Party</a></li>
+<li><a href="#creating-a-party-in-ttjim">Creating a Party in TTJim</a>
+<ul>
+<li><a href="#adding-employment-occupation-information">Adding Employment / Occupation Information</a></li>
+<li><a href="#adding-identifiers">Adding Identifiers</a></li>
+<li><a href="#adding-email-addresses">Adding Email Addresses</a></li>
+<li><a href="#adding-phone-numbers">Adding Phone Numbers</a></li>
+<li><a href="#adding-addresses">Adding Addresses</a></li>
+</ul></li>
+<li><a href="#searching-for-a-case-in-tt.jim">Searching for a Case in TT.jim</a></li>
+<li><a href="#creating-a-case-in-tt.jim">Creating a Case in TT.jim</a>
+<ul>
+<li><a href="#add-a-party-to-a-case">Add a Party to a Case</a></li>
+<li><a href="#creating-a-case-application">Creating a Case Application</a></li>
+</ul></li>
+<li><a href="#case-sealing">Case Sealing</a>
+<ul>
+<li><a href="#how-to-sealunseal-a-case">How to Seal/Unseal a Case</a></li>
+<li><a href="#authorizingdeauthorizing-users-to-view-sealed-cases">Authorizing/Deauthorizing Users to View Sealed Cases</a></li>
+</ul></li>
+<li><a href="#case-event-register">Case Event Register</a></li>
+<li><a href="#case-tasks">Case Tasks</a></li>
+<li><a href="#case-documents">Case Documents</a>
+<ul>
+<li><a href="#generating-a-court-document">Generating a Court Document</a></li>
+<li><a href="#uploading-and-viewing-a-document">Uploading and Viewing a Document</a></li>
+</ul></li>
+<li><a href="#case-judicial-assignments">Case Judicial Assignments</a></li>
+<li><a href="#case-hearings">Case Hearings</a></li>
+<li><a href="#case-minutes">Case Minutes</a></li>
+<li><a href="#case-payments">Case Payments</a>
+<ul>
+<li><a href="#adding-a-payment">Adding a Payment</a></li>
+<li><a href="#disbursing-a-payment-in-tt.jim">Disbursing a Payment in TT.jim</a></li>
+<li><a href="#reimbursing-a-payment-in-tt.jim">Reimbursing a Payment in TT.jim</a>
+<ul>
+<li><a href="#payment-detail-updates">Payment Detail Updates</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#user-administration">User Administration</a>
+<ul>
+<li><a href="#user-management">User Management</a>
+<ul>
+<li><a href="#searching-for-a-user-staff">Searching for a User (Staff):</a></li>
+<li><a href="#createing-a-new-user-staff">Createing a New User (Staff)</a></li>
+</ul></li>
+<li><a href="#staff-pool-management">Staff Pool Management</a>
+<ul>
+<li><a href="#searchingbrowsing-staff-pools">Searching/Browsing Staff Pools</a></li>
+<li><a href="#adding-user-to-staff-pool">Adding User to Staff Pool</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#event-workflows">Event Workflows</a></li>
+<li><a href="#lookup-tables">Lookup Tables</a>
+<ul>
+<li><a href="#updating-lookup-table">Updating Lookup Table</a></li>
+</ul></li>
+<li><a href="#thank-you-for-reading">Thank you for Reading!</a></li>
+</ul>
+</nav>
+<!--
+
+![](./images/ttjim-logo.png)
+Version 2.0 (Criminal Division)
+
+ -->
+<h1 id="tt.jim---the-court-case-management-system">TT.jim - The Court Case Management System</h1>
+<h2 id="copyright">Copyright</h2>
+<p>Copyright © 2021 Judiciary of Trinidad and Tobago.</p>
+<p>No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in reviews and certain other non-commercial uses permitted by copyright law.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>The current iteration of this manual would not have been possible without original efforts of Ms. Rhea Seegobin from the Judiciary’s Family and Children Division. It is the manual from the Family and Children’s Division that this Criminal Division manual is modeled on and aspired to be like.</p>
+<p>Additionally, thanks is also extended to the National Center for States Court (NCSC) who have always been with us throughout every step of this process in the development of TT.jim.</p>
+<h2 id="introduction">Introduction</h2>
+<p>TT.jim is the new Court Case Management Software, which will replace the Judicial Enforcement Management System (JEMS) introduced in 1993, and is being rolled out to all the courts. TT.jim was launched at the inauguration of the Children Court, in 2018, and is currently in use there. This is the outcome of the MOU signed by Chief Justice Archie with the Supreme Court of Nigeria and the US National Center for State Courts.</p>
+<h2 id="welcome">Welcome</h2>
+<p>Welcome to training of the TT.jim system (Criminal Divison). TT.jim is another step in the modernization and digitalization of the Judiciary of Trinidad and Tobago. TT.jim will soon be the central point of management for all court related activities from creating cases, assigning judges and tracking payments and disbursements. Let’s get started!</p>
+<h1 id="how-to-login-to-tt.jim">How to Login to TT.jim</h1>
+<p>To login to TT.jim, on the desktop of your Judiciary computer, double click the TT.jim icon.</p>
+<p><img src="./images/ttjim-desktop-icon.png" /></p>
+<p>This will bring up the TT.jim website (see below). From here select the relevant court which would take you to the login screen to start using TT.jim.</p>
+<p><img src="./images/ttjim-website.png" /></p>
+<p>Alternatively, you can open a Chrome browser and navigate to the following URL: https://districtcrim.ttlawcourts.org/.</p>
+<p>Enter your username and password on the left side of the screen. The default username and password are a combination of your first initial in your first name and your last name. This username will be same as your Active Directory User Name. The password will be provided to you but the IT Help Desk.</p>
+<p>Enter your credentials and click/tap the <em>LOG IN</em> button.</p>
+<p><img src="./images/login-screen.png" /></p>
+<p>The initial screen that greets you upon a successful login should resemble image below.</p>
+<p><img src="./images/welcome-dashboard.png" /></p>
+<p>At the top right, you will see the name of the person that is currently logged in and the court to which he/she is currently logged into.</p>
+<p>If a user is assigned to multiple courts, the user can change the active court by selecting the desired court from the drop down list at the top right.</p>
+<h1 id="searching-for-a-party">Searching for a Party</h1>
+<p>The <em>parties</em> to a case should be created before creating the actual case. Before attempting to create a party, the user should <strong>ALWAYS</strong> search TT.jim for the prospected party before entering it into the system. This practice prevents duplicate parties being entered into the Court Case Management System (CCMS). Duplicate entries should be avoided because Parties cannot be deleted from the system. This is a transparency feature implemented for auditing perposes.</p>
+<p>To search for a party, go to the party tab and select “Search Party”</p>
+<p><img src="./images/party-search.png" /></p>
+<p>Enter the first name or last name of the party you are looking for. This search does not search for a full name (Please be reminded of that). Click enter to complete your search.</p>
+<p>The reset button clears the fields in preparation for another search.</p>
+<p><img src="./images/party-search-result.png" /></p>
+<p>If the user does not exist, the system would return zero results found.</p>
+<p><img src="./images/party-search-zero-results.png" /></p>
+<p>If there were no result found, then you should go ahead and create the needed parties in preparation for case creation.</p>
+<h1 id="creating-a-party-in-ttjim">Creating a Party in TTJim</h1>
+<p>The BASIC pieces of information needed to create a party are the Given Name and the Family Name (i.e. First Name/Last Name).</p>
+<p>Additional information can be entered at a later date. This will help to minimize the time a customer spends at the counter.</p>
+<p>Please ensure that all applicable information is stored for every party.</p>
+<p><img src="./images/party-details.png" /></p>
+<p>Click the save button to create the party.</p>
+<p>Upon party creation, proceed to add the relevant bio data such as Employment History / Occupation, Identifiers, Email Addresses, Phone Numbers and Addresses.</p>
+<p>TT.jim allows for multiple sets of bio data to be affixed to a particular party in addition to the manadatory genereal details. See the image below.</p>
+<p><img src="./images/party-details-extra.png" /></p>
+<p>To enter information into the bio data categories, click/tap the plus sign on the left of the category to expand the category box and expose the input fields to enter the party’s information.</p>
+<p>These bio data fields will have a start date and end date. The start date is the period from when the specific information that was entered is active or relevant. E.g. a party getting a new SIM card would have their phone number start date as they day their SIM was activated. The Start Date field is mandatory. The End Date field records information that is expired or no longer relevant. E.g. a person changed addresses. Then end date field is not manadatory.</p>
+<p>When you have finished entering the relevant information, ensure you click/tap the save button to confirm the added/updated information.</p>
+<h2 id="adding-employment-occupation-information">Adding Employment / Occupation Information</h2>
+<p>To add Employment/Occupation information, expand the relevant category box. The system only accepts predefined occupations that can be exposed by clicking the dropdown arrow on the Occupation Title input field. This title field supports the type-ahead option that filters the occupations as you type. The system does not have an “UNEMPLOYED” option as of this time.</p>
+<p><img src="./images/occupation-save.png" /></p>
+<p>The fields that are mandatory for saving an occupation in the system are:</p>
+<ol type="1">
+<li>Occupation Title</li>
+<li>Employment Status</li>
+<li>Start Date</li>
+</ol>
+<h2 id="adding-identifiers">Adding Identifiers</h2>
+<p>To add identifiers, expand the relevant category box. Identifiers are used to store government and other professionally issued forms of identification for a party. Use the dropdown menu to select the relevant identifier to the party. You can add multiple identifiers to a party.</p>
+<p><img src="./images/identifiers-list.png" /></p>
+<p>The fields that are mandatory for saving an identifier in the system are:</p>
+<ol type="1">
+<li>Identifier Type</li>
+<li>Identifier Value</li>
+<li>Start Date</li>
+</ol>
+<p><img src="./images/identifiers-save.png" /></p>
+<h2 id="adding-email-addresses">Adding Email Addresses</h2>
+<p>To add an Email Address, ensure the email is in the correct format (e.g. jdoe@example.com). You can add multiple email addresses to a party.</p>
+<p>The fields that are mandatory for saving an email address in the system are:</p>
+<ol type="1">
+<li>Email Type</li>
+<li>Email Address</li>
+<li>Start Date</li>
+</ol>
+<p><img src="./images/email-save.png" /></p>
+<h2 id="adding-phone-numbers">Adding Phone Numbers</h2>
+<p>To add a phone number, enter the number without any dashes or spaces. You can add multiple phone numbers to a party.</p>
+<p><img src="./images/phone-save.png" /></p>
+<p>The fields that are mandatory for saving an email address in the system are:</p>
+<ol type="1">
+<li>Phone Type</li>
+<li>Phone Number</li>
+<li>Start Date</li>
+</ol>
+<h2 id="adding-addresses">Adding Addresses</h2>
+<p>To add an address, simply input the information indicated in the input field’s title. If (and only if) Trinidad and Tobago is selected as a country, the City/Town dropmenu then becomes active. After a City/Town is selected TT.jim will then automatically populate the Community Code, Administrative Area and Postal Code fields. You then have to enter in the remaining required fields (see list below) to before the system will allow the address to be entered/updated.</p>
+<p>The fields that are mandatory for saving an address in the system are:</p>
+<ol type="1">
+<li>LP# / House Number</li>
+<li>Community Code – provided by Central Statistical Office</li>
+<li>Administrative Area - provided by Central Statistical Office</li>
+<li>Postal Code – provided by the postal service</li>
+<li>City / Town</li>
+<li>Country</li>
+<li>Description – This field will be helpful to a Marshall when he/she is delivering a summons.</li>
+<li>Start Date</li>
+</ol>
+<p><img src="./images/address-save.png" /></p>
+<h1 id="searching-for-a-case-in-tt.jim">Searching for a Case in TT.jim</h1>
+<p>Before attempting to create a case, the user should <strong>ALWAYS</strong> search TT.jim for any existing case(s) for the Applicant/Petitioner in question. This practice prevents duplicate cases being entered into the Court Case Management System (CCMS). Duplicate entries should be avoided because cases cannot be deleted from the system. This is a transparency feature implemented for auditing perposes.</p>
+<p>To search for a case, go to the <em>Case</em> tab and select “Search Case”. The system performs various types of case searches as seen below:</p>
+<ol type="1">
+<li>A full or partial case number. Entering SGW-1-2020 and CR-DC-SGW-1-2020 will yield the same search results.</li>
+</ol>
+<p><img src="./images/search-case-1.png" /></p>
+<ol start="2" type="1">
+<li>A combination search using a party's name and the party's role in the case. This search will return all cases where the party's name is “Mark” and the role is “Complainant”.</li>
+</ol>
+<p><img src="./images/search-case-2.png" /></p>
+<ol start="3" type="1">
+<li>The system can return all cases of a specific case type.</li>
+</ol>
+<p><img src="./images/search-case-3.png" /></p>
+<ol start="4" type="1">
+<li>Another combination search can be performed to return all cases that are of a specific case type and case phase.</li>
+</ol>
+<p><img src="./images/search-case-4.png" /></p>
+<ol start="5" type="1">
+<li>The system can also return all cases with a specific case status.</li>
+</ol>
+<p><img src="./images/search-case-5.png" /></p>
+<h1 id="creating-a-case-in-tt.jim">Creating a Case in TT.jim</h1>
+<p>A case is the main module in TT.jim. Before creating case a <strong>ALWAYS</strong> search to see if a relevant case already exist. See <a href="#searching-for-a-case-in-tt.jim">Case Search</a> above for more information.</p>
+<p>The basic details required to a create a case are as follows:</p>
+<ol type="1">
+<li>Filing Date – This field can be back dated if needed</li>
+<li>Case Weight</li>
+<li>Case Status</li>
+<li>Case Type</li>
+<li>Case Phase</li>
+<li>Case Sub Type</li>
+<li>Case Party of type Applicant / Petitioner</li>
+</ol>
+<p>See below to view the interface for creating a case. Parties to a case can be added using the <em>Add Case Party</em> button from this interface. <img src="./images/create-case.png" /></p>
+<h3 id="add-a-party-to-a-case">Add a Party to a Case</h3>
+<p>The “Add Case Party” window allows you to add an existing party or create a new party directly from the interface. It is recommended that you <a href="#creating-a-party-in-ttjim">create parties</a> to a case prior to creating a case.</p>
+<p>If adding an existing party (recommended), you can search for the party directly from this interface. The search feature also supports partial name matches, thus you do not need to enter the entire name to conduct a search. Click/Tap the button with the magnifying glass to run the search after entering a full/partial search phrase. If the intended party is present, click/tap the relevant party and assign a Party Role and Start Date for the found party.</p>
+<p>You can add an existing party or create a new party from this interface. It is best practice to create all parties relating to a case, before creating the case. When the desired parties are found and selected, assign a Party Role (E.g. Complainant/Defendant) and click the button ‘Add Party to Case’.</p>
+<p><img src="./images/add-existing-party.png" /></p>
+<p>The party, party role and start date must be entered, otherwise the system would not be able to create a case.</p>
+<p>Once the button “Add Party To Case” is clicked, the case will be created.</p>
+<p><img src="./images/existing-party-added.png" /></p>
+<p>You can proceed to add as many parties to a case as required. Start and End dates can be used to track active parties on a case. For example, an attorney on a case may change from time to time and the start and end date will indicate the current attorney for the case.</p>
+<h2 id="creating-a-case-application">Creating a Case Application</h2>
+<p>Many applications can be created for the duration of a case. Some of the most common will include applications for granting/updating matters relating to bail.</p>
+<p>The figure below shows the application details for an Application for Bail.</p>
+<p><img src="./images/case-application-details.png" /></p>
+<p>Saving the application details generate the application number. It is a combination of the case number, application type and the sequence number. The details can be edited if needed.</p>
+<p><img src="./images/case-applications.png" /></p>
+<h1 id="case-sealing">Case Sealing</h1>
+<p>Some cases are more sensitive than others. Recognizing this fact, TT.jim allows the option to seal a case, thus restricting access to designated parties. By default, the parties with access to view a sealed case are the Judicial Officers assigned to the case and Registrars of the court.</p>
+<p>Registrars are responsible for managing sealed cases. Only a Registrar has permission to seal/unseal a case. Registrars can also add/remove users to a case. After being granted authorization by a Registrar, these users will then be able to access sealed cases.</p>
+<p>When searching cases, if a case is sealed, only the Case ID is displayed in the search results while all other fields are marked as <em>Case Sealed</em>. To view a sealed case, select the desired case from the list of cases.</p>
+<p><img src="./images/list-sealed-cases.png" /></p>
+<p>You will be prompted to enter a password to gain authorization to view the case. If have have been assigned permission to view the sealed case in question, simply enter the same password you used to login to TT.jim and you will be take to the case details page of the sealed case.</p>
+<p><img src="./images/seal-case-password.png" /></p>
+<h2 id="how-to-sealunseal-a-case">How to Seal/Unseal a Case</h2>
+<p>To <strong>seal</strong> a case, you must be logged in as a Registrar. The steps are as follows:</p>
+<ol type="1">
+<li><p>Click/Tap the “UPDATE ACCESS” button to bring up the Seal Case File windows.</p>
+<p><img src="./images/update-case-access.png" /></p></li>
+<li><p>Click the “Seal Case” button.</p>
+<p><img src="./images/seal-case-file-window.png" /></p></li>
+</ol>
+<p>When a case is sealed, A caption in a red font will appear at the top of the case indicating the fact that it is sealed.</p>
+<p>To <strong>unseal</strong> a case Click/Tap the “UNSEAL CASE” button.</p>
+<p><img src="./images/sealed-case.png" /></p>
+<h2 id="authorizingdeauthorizing-users-to-view-sealed-cases">Authorizing/Deauthorizing Users to View Sealed Cases</h2>
+<p>Judicial Officers assigned to the case as well as Registrars can view a sealed case by default. Additional users can be authorized to view a case by following the steps below:</p>
+<ol type="1">
+<li><p>Click/Tap the “UPDATE ACCESS” button to bring up the Seal Case File windows.</p></li>
+<li><p>Click/Tap the “Add Authorized User” to bring up a list of users.</p>
+<p><img src="./images/seal-case-file-window.png" /></p></li>
+<li><p>Select the user you want to authorize to view the sealed case.</p>
+<p><img src="./images/select-authorized-case-user.png" /></p></li>
+<li><p>Click/Tap the “Save Authorized Users” button after you have finished adding all the desired authorized users.</p>
+<p><img src="./images/save-authorized-case-user.png" /></p></li>
+</ol>
+<h1 id="case-event-register">Case Event Register</h1>
+<p>TT.jim’s Event Register allows us to track all changes in a case. The event filter is user friendly and it is type ahead to help a user filter the specific events that he/she is looking to find.</p>
+<p><img src="./images/case-register.png" /></p>
+<p>All changes to a case are recorded in the event register and it is publicly available to all users in the system.</p>
+<h1 id="case-tasks">Case Tasks</h1>
+<!-- # Manual Task Creation, Assignment and Management -->
+<p>Task in TT.jim can be created as a result of an event workflow or be created manually by a supervisor and assigned to a specific group. A group can consist of one or more staff members.</p>
+<p>To manually create a task, click/tap the “Add Case Task” button to bring up the “Case Task Details” window. Enter the information as indicated in the input field headings, then click “Save Task” to finalize your entry. When a case is save it will show up in the list of case tasks on the main case page.</p>
+<p><img src="./images/case-tasks.png" /></p>
+<p>When a case task is added it can be assigned to a staff pool. When a task is assigned to a staff pool, all members of that group will be notified of the pending task by having it show up in their workbasket.</p>
+<p>The workbasket is TT.jim’s group todo list where a user can view all pending case tasks. It can be accessed by clicking the red clock icon on the far right of the window. Only taks assigned to your group will show up in the workbasket.</p>
+<p><img src="./images/work-basket.png" /></p>
+<p>While task are assigned to a group, a user can claim responsibility for a task by <em>checking it out</em>. When a task is checked out the system will record the person that checked out the task. When a task is checked out this information is visible to all users in the system.</p>
+<p><img src="./images/task-list.png" /></p>
+<p>A user that is assigned the role of Court Staff will only be allowed to edit the task details, mark a task as checked out and mark a task a completed.</p>
+<p><img src="./images/case-task-details.png" /></p>
+<p>A supervisor will have the permission to change all the task details prior to the task being marked as completed. When a task is marked as completed the system records the person that completed the task and the date and time that the task was completed</p>
+<p><img src="./images/case-tasks-completed.png" /></p>
+<p>All task details are locked when a task is marked as completed.</p>
+<p><img src="./images/case-tasks-locked.png" /></p>
+<h1 id="case-documents">Case Documents</h1>
+<p>A case can have many documents attached to it. These documents may be generated from a standardized document template or uploaded to the system. When uploading documents to a case the document must be in <strong>PDF</strong> format (i.e. not doc/docx such as Microsoft Word). There are no restrictions on the amount of documents that can be attached to a case. Documents generated/uploaded cannot be removed from the system even if it was attached to a case in error. To add the correct document, a new document must to generated/uploaded. Both documents will remain on the server auditing purposes and future reference.</p>
+<h2 id="generating-a-court-document">Generating a Court Document</h2>
+<p>Choosing the document you want to create for a case is simple. Select it from the Generate Document drop down menu on the left. When you have finished selecting the correct one click the Generate button.</p>
+<p><img src="./images/generate-document.png" /></p>
+<!-- ![]() -->
+<p>Microsoft word will automatically open up and the template document would come up. Click on the ‘Enable Editing’ button.</p>
+<!-- ![]() -->
+<p>The particulars can be entered into the word document. Hitting the tab key will keep moving to the fields that need to be filled in. When you are finished do not save the document on the machine. You need to upload the document by clicking on the macro button.</p>
+<!-- ![]() -->
+<!-- ![]() -->
+<p>Click save button to complete the upload. When the document is uploaded successfully, it will show up as a court document in the document listing.</p>
+<!-- . ![]() -->
+<p>Refresh the browser and search for the document that you just generated.</p>
+<!-- ![]() -->
+<p>Click on the document and it would be opened as a read only PDF file. Changes are not allowed to be made to an order. If a mistake is made, the order has to be regenerated.</p>
+<h2 id="uploading-and-viewing-a-document">Uploading and Viewing a Document</h2>
+<p>There are two categories of documents that can be uploaded in TTjim, Filings and Court Documents.</p>
+<p>The user needs to select the category and the document type. In this case it is a filing document with the document type “Bail Application”.</p>
+<p><img src="./images/choose-to-upload.png" /></p>
+<p>Click on the choose button and select the PDF file that you wish to upload. When the document is uploaded successfully it will show up in the document listing.</p>
+<p>Documents can be filtered by the categories, All, Filings and Court Documents.</p>
+<p>The system can return all documents with a partial name using the fuzzy search function.</p>
+<p>The search below returns all document that are of Filings that contain the word “Petition” in the document name.</p>
+<p><img src="./images/document-listing.png" /></p>
+<p>In order to view the document, simply click on the document name and it will open as a PDF.</p>
+<h1 id="case-judicial-assignments">Case Judicial Assignments</h1>
+<p>Every case needs to be assigned to a Judicial Officer (JO). Select the tab, <img alt="Judicial Assignments" src="./images/judicial-assignments-icon.png" width="150" />, and enter the judicial officer's start date. If a case is reassigned to a new judicial officer, enter the end date for that particular JO and enter the details for the new JO.</p>
+<p><img src="./images/save-judicial-assignment.png" /></p>
+<p>After the judicial officer is saved, it will show up below in the system.</p>
+<p><img src="./images/judicial-assignees.png" /></p>
+<h1 id="case-hearings">Case Hearings</h1>
+<p>Click on the Hearings icon at the bottom of the screen. The details for a hearing can be entered via the Add New Hearing Module. When you are finished entering the details please click on the “Save Hearing” Button.</p>
+<p><img src="./images/add-hearing.png" /></p>
+<p>The hearing will show up as seen below when it has been saved.</p>
+<p><img src="./images/list-hearings.png" /></p>
+<h1 id="case-minutes">Case Minutes</h1>
+<p>The mandatory fields needed to add a minute are</p>
+<ol type="1">
+<li>The hearing date</li>
+<li>The minute date, automatically populated with the system date and time</li>
+<li>The judicial officer</li>
+<li>General Minutes</li>
+</ol>
+<p><img src="./images/add-minute.png" /></p>
+<p>Appearances, Order, Exhibits and witnesses are not mandatory.</p>
+<p>After a minute is added to the system, you can edit</p>
+<ol type="1">
+<li>General Minutes</li>
+<li>Order</li>
+<li></li>
+</ol>
+<h1 id="case-payments">Case Payments</h1>
+<p>The payments module is used to record payments in/out of the court. It should be noted that the feature set of the payments module is currently limited to bookkeeping. In other words, the payments module is not used to transfer/receive payments but to record payments/disbursements that were sent/received.</p>
+<p>This payment module records payment information such as Payment Methods, Payment Types, Date of Payment and the amount paid.</p>
+<h2 id="adding-a-payment">Adding a Payment</h2>
+<p>To add a payment in TT.jim scroll to the bottom of the case and click/tap the <em>Payments and Disbirsements</em> Tab and then click/tap the <em>Add Payment</em> button.</p>
+<p><img src="./images/list-payments-empty.png" /></p>
+<p>When the Add Payment option is selected the Payment &amp; Disbursement Details window should popup. It is from this window that all the payment details relevant to the case can be entered. See below.</p>
+<p><img src="./images/add-payment.png" /> Figure: Processing a payment using CourtPay</p>
+<p>While using the payments module, you should take note of the following:</p>
+<ul>
+<li>A processing fee is only displayed for the Payment Method “Court Pay”.</li>
+<li>At least one payment detail must be entered for the payment to be saved in the system.</li>
+<li>The option for disbursement only appears after a payment is saved, since a disbursement does not happen on the same day the payment was processed.</li>
+<li>The total amount paid in by the customer must match the customer payment total in the Payment and Disbursement Details Section. If it does not match you will get a prompt indicating such and the payment will not be saved in TT.jim.</li>
+</ul>
+<p>Only when the above criteria are met, can the payment be saved in TT.jim. A court staff user has access to edit the payment details prior to a disbursement. The payment type can only be edited by a supervisor after a payment is entered.</p>
+<p><img src="./images/list-payments.png" /> Figure: List of payments added to TT.jim</p>
+<h2 id="disbursing-a-payment-in-tt.jim">Disbursing a Payment in TT.jim</h2>
+<p>A payment can only be disbursed after it was first <a href="#adding-a-payment">added</a> to TT.jim. To disburse a payment the user has to select the payment under the Payments and Disbursements tab.</p>
+<p>Disbursement options are only shown for the “Compensation” payment type.</p>
+<p>Once a disbursement date is entered the disbursement checkbox appears. Select the checkbox and the system will prompt you to verify that you want to disburse this payment</p>
+<figure>
+<img src="./images/" alt="Add Disbursement" /><figcaption aria-hidden="true">Add Disbursement</figcaption>
+</figure>
+<p>Once this payment is saved, they system records the person that made the disbursement and the date and time that the payment was disbursed.</p>
+<p>A supervisor will have the necessary permissions to edit a payment even after it was disbursed. This allows for the correction of any erroneously entered payment infromation.</p>
+<h2 id="reimbursing-a-payment-in-tt.jim">Reimbursing a Payment in TT.jim</h2>
+<p>A user that is assigned the role of a supervisor will have the permission necessary to reimburse a payment. To reimburse the payment simply uncheck the checkbox, “Payment Disbursed” and the date of disbursement will automatically be set to null and the system will prompt the user to this effect. Click the “save payment” button to complete the reimbursement.</p>
+<figure>
+<img src="./images/" alt="Disburse Payment" /><figcaption aria-hidden="true">Disburse Payment</figcaption>
+</figure>
+<p>The fields “Payment Disbursed By” and “Date of Disbursement” will both be set to null to reflect the reimbursement.</p>
+<p>The payment history tab shows all the payment details/breakdown for a specific case in the system</p>
+<figure>
+<img src="./images/" alt="Payment History" /><figcaption aria-hidden="true">Payment History</figcaption>
+</figure>
+<p>This is updated as additional payments are recorded for a case.</p>
+<h3 id="payment-detail-updates">Payment Detail Updates</h3>
+<p>The Event Register records all changes to case information including updates to payment information. The event register records payment creation and payment updates. These payment updates are recorded in six categories. See the figure below.</p>
+<figure>
+<img src="./images/payment-update-types.png" alt="payment-update-types" /><figcaption aria-hidden="true">payment-update-types</figcaption>
+</figure>
+<p>Figure: Registered Payment Events</p>
+<p>When a specific filter is applied the payments on that case with the changes are shown in the event register. The system records the date and time that the changes were performed and the user that made the change. This information will be used to track accountability and it will help with the auditing process.</p>
+<!-- ![]() -->
+<!-- ![]() -->
+<h1 id="user-administration">User Administration</h1>
+<p>TT.jim provides an interface to handle common administration functions from creating users, managing event workflows and reloading lookup tables.</p>
+<p>This administrative interface is restricted only to authorized staff users as determined by their assigned roles.</p>
+<figure>
+<img src="./images/admin-tab.png" alt="Administration Tab" /><figcaption aria-hidden="true">Administration Tab</figcaption>
+</figure>
+<h2 id="user-management">User Management</h2>
+<p>The user management interface allows for the searching and creation of staff users on the TT.jim system. It should be noted that this is different from the user profiles that are created using the party tab. Users created in the Admin interface are staff users that would be using the TT.jim system while users created using the Party interface are persons that are related to a court case.</p>
+<h3 id="searching-for-a-user-staff">Searching for a User (Staff):</h3>
+<p>To search for a user enter a first name or last name in the search box and click/tap the search button. Partial names are also acceptable. The system will then return a list of results that match the search criteria or indicate if no results were found.</p>
+<figure>
+<img src="./images/search-user.png" alt="search staff users" /><figcaption aria-hidden="true">search staff users</figcaption>
+</figure>
+<h3 id="createing-a-new-user-staff">Createing a New User (Staff)</h3>
+<p>If a user is not found after a search one, you can then create a new user. When creating a user input the standard bio data such as names and email address, then assign a password.</p>
+<p>Additionally, assign the user to a court that they represent and the role they will play. TT.jim supports the following roles:</p>
+<ol type="1">
+<li>Accounting Assistant</li>
+<li>Assistant Registrar &amp; Deputy Marshal</li>
+<li>Assistant Registrar and Deputy Marshall</li>
+<li>Case Management Officer</li>
+<li>Clerical assistance to Court Manager</li>
+<li>Counter Clerk</li>
+<li>Counter Supervisor</li>
+<li>Court Manager</li>
+<li>Court Staff</li>
+<li>Front Desk and Counter</li>
+<li>IT - Full access</li>
+<li>Judicial Officer</li>
+<li>Marshall</li>
+<li>Pre Hearing</li>
+<li>Read Only</li>
+<li>Records Supervisor</li>
+<li>Registrar</li>
+<li>TGO - Power User</li>
+<li>Typist / Data Entry</li>
+<li>Verification Officers</li>
+</ol>
+<figure>
+<img src="./images/create-user.png" alt="create staff users" /><figcaption aria-hidden="true">create staff users</figcaption>
+</figure>
+<h2 id="staff-pool-management">Staff Pool Management</h2>
+<p>To simplify the management of users, TT.jim supports the use of staff pools to group users. This grouping is particularly useful for making various task visible to a whole class of staff.</p>
+<h3 id="searchingbrowsing-staff-pools">Searching/Browsing Staff Pools</h3>
+<p>You can browse the short list of staff pools using the scrollbar at the right or run a search for a pool using the search bar provided.</p>
+<figure>
+<img src="./images/search-staff-pool.png" alt="create staff users" /><figcaption aria-hidden="true">create staff users</figcaption>
+</figure>
+<h3 id="adding-user-to-staff-pool">Adding User to Staff Pool</h3>
+<p>Once an appropriate Staff Pool is determined, you can add users to a the selected staff pool.</p>
+<p>TT.jim has the following staff pools: 1. Bail Management Unit 2. Bail Officer 3. Clerk Typists 4. Counter and Front Desk 5. Court Managers and Assistant Court Managers 6. Data Entry and Imaging Officer 7. Dispatch Management Unit 8. District Clerk of the Peace 9. Front Desk (only) - Further Data Entry and Imaging 10. JSO &amp; Ass. JSO 11. Judgement and Orders, Warrants, Summons etc. Unit 12. Judicial Support Officer (JSO) 13. Judicial Team 14. Justice of the Peace 15. Listing Unit 16. Magistracy Registrar 17. Magistracy Registrar and Clerk of the Court 18. Monitoring and Follow Up 19. Records Management Unit 20. Records Officer 21. Revenue Activities Unit 22. Statistical Unit 23. Transcriptionist 24. Verification Officers 25. Witness and Courtroom Support Unit</p>
+<figure>
+<img src="./images/add-staff-to-pool.png" alt="Add to staff pool" /><figcaption aria-hidden="true">Add to staff pool</figcaption>
+</figure>
+<h1 id="event-workflows">Event Workflows</h1>
+<p>Event workflows determine the event or sequence of events that must occur when another action is initiated/completed. For example (contrived), take the <em>Case Created</em> Event. This event triggers two task: Calendar Next Date and Execution of Warrant. Hence, these task will be automatically populated in the task tab when a case is created and show up in the workbasket of all users connected in the <a href="#staff-pool-management">staff pool</a> associated with that case. It will even display how much time it should take to complete each task</p>
+<figure>
+<img src="./images/event-workflows.png" alt="event workflows" /><figcaption aria-hidden="true">event workflows</figcaption>
+</figure>
+<h1 id="lookup-tables">Lookup Tables</h1>
+<p>Lookup tables manage all the reference data used to populate the multitude of dropdown menu options present in TT.jim.</p>
+<p>For example when creating a case and one must choose a <em>case type</em>, it is the lookup table below that populates the various case types such as Bail Applications, Indicatable Offences, Anti-Gang Act and more.</p>
+<p><img src="./images/lookup-tables.png" alt="lookup-tables" /> Figure: Lookup table for Case Type</p>
+<h2 id="updating-lookup-table">Updating Lookup Table</h2>
+<p>If the current set of datapoints do not meet your needs, you can update the lookup tables with your own custom data points by clicking/tapping the blue <em>New Data Item</em> button in the left pane. You will then be required to enter a name, short name and description for your new data point. When you are finished clik save.</p>
+<figure>
+<img src="./images/append-lookup-table.png" alt="append-lookup-table" /><figcaption aria-hidden="true">append-lookup-table</figcaption>
+</figure>
+<p>Now, whenever a case is created, you will see the case type we created appear as an option. <img src="./images/custom-case-type.png" alt="custom-case-type" /></p>
+<p>There are many other lookup tables such as case phase, case status, initiating document and much more.</p>
+<h1 id="thank-you-for-reading">Thank you for Reading!</h1>
+</body>
+</html>

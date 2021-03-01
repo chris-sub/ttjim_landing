@@ -1,0 +1,36 @@
+body{
+	max-width: 66em;
+	width: 63%;
+	text-align: justify;
+	text-justify: inter-word;
+	margin-left: auto;
+	margin-right: auto;
+	
+	font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 125%;
+  margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+body > section > img:first-of-type {
+	all: initial;
+	width: 100%;
+}
+
+img {
+	/* max-width: 500px; */
+	/* max-height: 100%; */
+	/* border: 1px solid grey; */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	max-width: 60em;
+	width: 90%;
+	display: block;
+	border: 1px solid #3f48cc;
+	margin-top: 1.5em;
+	margin-bottom: 3.5em;
+}
+
+

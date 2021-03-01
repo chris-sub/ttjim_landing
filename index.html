@@ -169,12 +169,26 @@
         width: 35px;
         margin-bottom: 15px;
     }
-    .howto-link {display:inline-block; padding:15px 20px; border-radius:20px; font-weight:bold; transition:.5s; letter-spacing:2px; border:2px solid #003845; text-align:center; color:#003845; margin:55px auto 0; font-family:Helvetica}
-	.howto-link:hover {background:#003845; padding:15px 40px; color:#FFF;}
-    header .inner {
+    .howto-link,.manual-link {display:inline-block; padding:15px 20px; border-radius:20px; font-weight:bold; transition:.5s; letter-spacing:2px; border:2px solid #003845; text-align:center; color:#003845; font-family:Helvetica}
+	.howto-link:hover, .manual-link:hover {background:#003845; padding:15px 40px; color:#FFF;}
+    a.manual-link {
+		margin:90px auto 0;
+		color: #FFF;
+		padding:15px 25px;
+		background: #bf311a;
+		border-color: #bf311a;
+		padding:15px;
+		letter-spacing:2px;
+	}
+	a.manual-link:hover {
+		color:#bf311a; 
+		background: #FFF;
+		border: 2px solid #bf311a;
+	}
+	a.howto-link { margin:40px auto 0;}
+	header .inner {
         background:radial-gradient(circle at center bottom, rgba(255,255,253,.85), #FFF);
     }
-    
     @media screen and (max-width: 992px) {
         .flex-container > div.tile {
             width: 175px;
@@ -196,8 +210,8 @@
 		}
         .flex-container > div.tile {
             width: 100%;
-			height:auto;
-			margin:0 ;
+			height: auto;
+			margin: 0;
         }
         .flex-container > div.tile a {
             padding: 10px 10px 0
@@ -242,7 +256,14 @@
                 </div>
             </div>
         </section>
-		<div class="center"><a href="https://sp.ttlawcourts.org/ttjim/_layouts/15/start.aspx#/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fttjim%2FShared%20Documents%2FTTJIM%5FHow%5FTos&FolderCTID=0x012000B396F07A43F36049B68F0BB8903C4692&View=%7B865B2E2B%2DE9A9%2D40A9%2D9558%2D3A6B1ED29DE8%7D" target="_blank" class="howto-link">TT.JIM How-To's</a></div>
+		<div class="center">
+			<div>
+				<a href="manual" target="_blank" class="manual-link">Click Here to View Manual</a>
+			</div>
+			<div>
+				<a href="https://sp.ttlawcourts.org/ttjim/_layouts/15/start.aspx#/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fttjim%2FShared%20Documents%2FTTJIM%5FHow%5FTos&FolderCTID=0x012000B396F07A43F36049B68F0BB8903C4692&View=%7B865B2E2B%2DE9A9%2D40A9%2D9558%2D3A6B1ED29DE8%7D" target="_blank" class="howto-link">TT.JIM How-To's</a>
+			</div>
+		</div>
         <footer class="footer">
             <section class="container">
                 <img src='img/logo.svg' alt='Judiciary of Trinidad and Tobago' id='foot-logo' />
