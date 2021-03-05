@@ -21,13 +21,6 @@
   <![endif]-->
 </head>
 <body>
-
-<section>
-	<img src="./images/ttjim-logo.png" />
-	<h3>Version 2.0 (Criminal Division)</h3>
-</section>
-
-
 <nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#tt.jim---the-court-case-management-system">TT.jim - The Court Case Management System</a>
@@ -82,7 +75,7 @@
 <li><a href="#user-management">User Management</a>
 <ul>
 <li><a href="#searching-for-a-user-staff">Searching for a User (Staff):</a></li>
-<li><a href="#createing-a-new-user-staff">Createing a New User (Staff)</a></li>
+<li><a href="#creating-a-new-user-staff">Creating a New User (Staff)</a></li>
 </ul></li>
 <li><a href="#staff-pool-management">Staff Pool Management</a>
 <ul>
@@ -129,7 +122,7 @@ Version 2.0 (Criminal Division)
 <p>At the top right, you will see the name of the person that is currently logged in and the court to which he/she is currently logged into.</p>
 <p>If a user is assigned to multiple courts, the user can change the active court by selecting the desired court from the drop down list at the top right.</p>
 <h1 id="searching-for-a-party">Searching for a Party</h1>
-<p>The <em>parties</em> to a case should be created before creating the actual case. Before attempting to create a party, the user should <strong>ALWAYS</strong> search TT.jim for the prospected party before entering it into the system. This practice prevents duplicate parties being entered into the Court Case Management System (CCMS). Duplicate entries should be avoided because Parties cannot be deleted from the system. This is a transparency feature implemented for auditing perposes.</p>
+<p>The <em>parties</em> to a case should be created before creating the actual case. Before attempting to create a party, the user should <strong>ALWAYS</strong> search TT.jim for the prospected party before entering it into the system. This practice prevents duplicate parties being entered into the Court Case Management System (CCMS). Duplicate entries should be avoided because Parties cannot be deleted from the system. This is a transparency feature implemented for auditing purposes.</p>
 <p>To search for a party, go to the party tab and select “Search Party”</p>
 <p><img src="./images/party-search.png" /></p>
 <p>Enter the first name or last name of the party you are looking for. This search does not search for a full name (Please be reminded of that). Click enter to complete your search.</p>
@@ -145,10 +138,10 @@ Version 2.0 (Criminal Division)
 <p><img src="./images/party-details.png" /></p>
 <p>Click the save button to create the party.</p>
 <p>Upon party creation, proceed to add the relevant bio data such as Employment History / Occupation, Identifiers, Email Addresses, Phone Numbers and Addresses.</p>
-<p>TT.jim allows for multiple sets of bio data to be affixed to a particular party in addition to the manadatory genereal details. See the image below.</p>
+<p>TT.jim allows for multiple sets of bio data to be affixed to a particular party in addition to the mandatory general details. See the image below.</p>
 <p><img src="./images/party-details-extra.png" /></p>
 <p>To enter information into the bio data categories, click/tap the plus sign on the left of the category to expand the category box and expose the input fields to enter the party’s information.</p>
-<p>These bio data fields will have a start date and end date. The start date is the period from when the specific information that was entered is active or relevant. E.g. a party getting a new SIM card would have their phone number start date as they day their SIM was activated. The Start Date field is mandatory. The End Date field records information that is expired or no longer relevant. E.g. a person changed addresses. Then end date field is not manadatory.</p>
+<p>These bio data fields will have a start date and end date. The start date is the period from when the specific information that was entered is active or relevant. E.g. a party getting a new SIM card would have their phone number start date as they day their SIM was activated. The Start Date field is mandatory. The End Date field records information that is expired or no longer relevant. E.g. a person changed addresses. Then end date field is not mandatory.</p>
 <p>When you have finished entering the relevant information, ensure you click/tap the save button to confirm the added/updated information.</p>
 <h2 id="adding-employment-occupation-information">Adding Employment / Occupation Information</h2>
 <p>To add Employment/Occupation information, expand the relevant category box. The system only accepts predefined occupations that can be exposed by clicking the dropdown arrow on the Occupation Title input field. This title field supports the type-ahead option that filters the occupations as you type. The system does not have an “UNEMPLOYED” option as of this time.</p>
@@ -202,7 +195,7 @@ Version 2.0 (Criminal Division)
 </ol>
 <p><img src="./images/address-save.png" /></p>
 <h1 id="searching-for-a-case-in-tt.jim">Searching for a Case in TT.jim</h1>
-<p>Before attempting to create a case, the user should <strong>ALWAYS</strong> search TT.jim for any existing case(s) for the Applicant/Petitioner in question. This practice prevents duplicate cases being entered into the Court Case Management System (CCMS). Duplicate entries should be avoided because cases cannot be deleted from the system. This is a transparency feature implemented for auditing perposes.</p>
+<p>Before attempting to create a case, the user should <strong>ALWAYS</strong> search TT.jim for any existing case(s) for the Applicant/Petitioner in question. This practice prevents duplicate cases being entered into the Court Case Management System (CCMS). Duplicate entries should be avoided because cases cannot be deleted from the system. This is a transparency feature implemented for auditing purposes.</p>
 <p>To search for a case, go to the <em>Case</em> tab and select “Search Case”. The system performs various types of case searches as seen below:</p>
 <ol type="1">
 <li>A full or partial case number. Entering SGW-1-2020 and CR-DC-SGW-1-2020 will yield the same search results.</li>
@@ -225,7 +218,7 @@ Version 2.0 (Criminal Division)
 </ol>
 <p><img src="./images/search-case-5.png" /></p>
 <h1 id="creating-a-case-in-tt.jim">Creating a Case in TT.jim</h1>
-<p>A case is the main module in TT.jim. Before creating case a <strong>ALWAYS</strong> search to see if a relevant case already exist. See <a href="#searching-for-a-case-in-tt.jim">Case Search</a> above for more information.</p>
+<p>A case is the main module in TT.jim. Before creating case <strong>ALWAYS</strong> search to see if a relevant case already exist. See <a href="#searching-for-a-case-in-tt.jim">Case Search</a> above for more information.</p>
 <p>The basic details required to a create a case are as follows:</p>
 <ol type="1">
 <li>Filing Date – This field can be back dated if needed</li>
@@ -357,7 +350,7 @@ Version 2.0 (Criminal Division)
 <p>The payments module is used to record payments in/out of the court. It should be noted that the feature set of the payments module is currently limited to bookkeeping. In other words, the payments module is not used to transfer/receive payments but to record payments/disbursements that were sent/received.</p>
 <p>This payment module records payment information such as Payment Methods, Payment Types, Date of Payment and the amount paid.</p>
 <h2 id="adding-a-payment">Adding a Payment</h2>
-<p>To add a payment in TT.jim scroll to the bottom of the case and click/tap the <em>Payments and Disbirsements</em> Tab and then click/tap the <em>Add Payment</em> button.</p>
+<p>To add a payment in TT.jim scroll to the bottom of the case and click/tap the <em>Payments and Disbursements</em> Tab and then click/tap the <em>Add Payment</em> button.</p>
 <p><img src="./images/list-payments-empty.png" /></p>
 <p>When the Add Payment option is selected the Payment &amp; Disbursement Details window should popup. It is from this window that all the payment details relevant to the case can be entered. See below.</p>
 <p><img src="./images/add-payment.png" /> Figure: Processing a payment using CourtPay</p>
@@ -374,27 +367,19 @@ Version 2.0 (Criminal Division)
 <p>A payment can only be disbursed after it was first <a href="#adding-a-payment">added</a> to TT.jim. To disburse a payment the user has to select the payment under the Payments and Disbursements tab.</p>
 <p>Disbursement options are only shown for the “Compensation” payment type.</p>
 <p>Once a disbursement date is entered the disbursement checkbox appears. Select the checkbox and the system will prompt you to verify that you want to disburse this payment</p>
-<figure>
-<img src="./images/" alt="Add Disbursement" /><figcaption aria-hidden="true">Add Disbursement</figcaption>
-</figure>
-<p>Once this payment is saved, they system records the person that made the disbursement and the date and time that the payment was disbursed.</p>
-<p>A supervisor will have the necessary permissions to edit a payment even after it was disbursed. This allows for the correction of any erroneously entered payment infromation.</p>
+<p><img src="./images/" /></p>
+<p>Once this payment is saved, the system records the person that made the disbursement and the date and time that the payment was disbursed.</p>
+<p>A supervisor will have the necessary permissions to edit a payment even after it was disbursed. This allows for the correction of any erroneously entered payment information.</p>
 <h2 id="reimbursing-a-payment-in-tt.jim">Reimbursing a Payment in TT.jim</h2>
 <p>A user that is assigned the role of a supervisor will have the permission necessary to reimburse a payment. To reimburse the payment simply uncheck the checkbox, “Payment Disbursed” and the date of disbursement will automatically be set to null and the system will prompt the user to this effect. Click the “save payment” button to complete the reimbursement.</p>
-<figure>
-<img src="./images/" alt="Disburse Payment" /><figcaption aria-hidden="true">Disburse Payment</figcaption>
-</figure>
+<p><img src="./images/" /></p>
 <p>The fields “Payment Disbursed By” and “Date of Disbursement” will both be set to null to reflect the reimbursement.</p>
 <p>The payment history tab shows all the payment details/breakdown for a specific case in the system</p>
-<figure>
-<img src="./images/" alt="Payment History" /><figcaption aria-hidden="true">Payment History</figcaption>
-</figure>
+<p><img src="./images/" /></p>
 <p>This is updated as additional payments are recorded for a case.</p>
 <h3 id="payment-detail-updates">Payment Detail Updates</h3>
 <p>The Event Register records all changes to case information including updates to payment information. The event register records payment creation and payment updates. These payment updates are recorded in six categories. See the figure below.</p>
-<figure>
-<img src="./images/payment-update-types.png" alt="payment-update-types" /><figcaption aria-hidden="true">payment-update-types</figcaption>
-</figure>
+<p><img src="./images/payment-update-types.png" /></p>
 <p>Figure: Registered Payment Events</p>
 <p>When a specific filter is applied the payments on that case with the changes are shown in the event register. The system records the date and time that the changes were performed and the user that made the change. This information will be used to track accountability and it will help with the auditing process.</p>
 <!-- ![]() -->
@@ -402,17 +387,13 @@ Version 2.0 (Criminal Division)
 <h1 id="user-administration">User Administration</h1>
 <p>TT.jim provides an interface to handle common administration functions from creating users, managing event workflows and reloading lookup tables.</p>
 <p>This administrative interface is restricted only to authorized staff users as determined by their assigned roles.</p>
-<figure>
-<img src="./images/admin-tab.png" alt="Administration Tab" /><figcaption aria-hidden="true">Administration Tab</figcaption>
-</figure>
+<p><img src="./images/admin-tab.png" /></p>
 <h2 id="user-management">User Management</h2>
 <p>The user management interface allows for the searching and creation of staff users on the TT.jim system. It should be noted that this is different from the user profiles that are created using the party tab. Users created in the Admin interface are staff users that would be using the TT.jim system while users created using the Party interface are persons that are related to a court case.</p>
 <h3 id="searching-for-a-user-staff">Searching for a User (Staff):</h3>
 <p>To search for a user enter a first name or last name in the search box and click/tap the search button. Partial names are also acceptable. The system will then return a list of results that match the search criteria or indicate if no results were found.</p>
-<figure>
-<img src="./images/search-user.png" alt="search staff users" /><figcaption aria-hidden="true">search staff users</figcaption>
-</figure>
-<h3 id="createing-a-new-user-staff">Createing a New User (Staff)</h3>
+<p><img src="./images/search-user.png" /></p>
+<h3 id="creating-a-new-user-staff">Creating a New User (Staff)</h3>
 <p>If a user is not found after a search one, you can then create a new user. When creating a user input the standard bio data such as names and email address, then assign a password.</p>
 <p>Additionally, assign the user to a court that they represent and the role they will play. TT.jim supports the following roles:</p>
 <ol type="1">
@@ -437,37 +418,27 @@ Version 2.0 (Criminal Division)
 <li>Typist / Data Entry</li>
 <li>Verification Officers</li>
 </ol>
-<figure>
-<img src="./images/create-user.png" alt="create staff users" /><figcaption aria-hidden="true">create staff users</figcaption>
-</figure>
+<p><img src="./images/create-user.png" /></p>
 <h2 id="staff-pool-management">Staff Pool Management</h2>
 <p>To simplify the management of users, TT.jim supports the use of staff pools to group users. This grouping is particularly useful for making various task visible to a whole class of staff.</p>
 <h3 id="searchingbrowsing-staff-pools">Searching/Browsing Staff Pools</h3>
 <p>You can browse the short list of staff pools using the scrollbar at the right or run a search for a pool using the search bar provided.</p>
-<figure>
-<img src="./images/search-staff-pool.png" alt="create staff users" /><figcaption aria-hidden="true">create staff users</figcaption>
-</figure>
+<p><img src="./images/search-staff-pool.png" /></p>
 <h3 id="adding-user-to-staff-pool">Adding User to Staff Pool</h3>
-<p>Once an appropriate Staff Pool is determined, you can add users to a the selected staff pool.</p>
+<p>Once an appropriate Staff Pool is determined, you can add users to the selected staff pool.</p>
 <p>TT.jim has the following staff pools: 1. Bail Management Unit 2. Bail Officer 3. Clerk Typists 4. Counter and Front Desk 5. Court Managers and Assistant Court Managers 6. Data Entry and Imaging Officer 7. Dispatch Management Unit 8. District Clerk of the Peace 9. Front Desk (only) - Further Data Entry and Imaging 10. JSO &amp; Ass. JSO 11. Judgement and Orders, Warrants, Summons etc. Unit 12. Judicial Support Officer (JSO) 13. Judicial Team 14. Justice of the Peace 15. Listing Unit 16. Magistracy Registrar 17. Magistracy Registrar and Clerk of the Court 18. Monitoring and Follow Up 19. Records Management Unit 20. Records Officer 21. Revenue Activities Unit 22. Statistical Unit 23. Transcriptionist 24. Verification Officers 25. Witness and Courtroom Support Unit</p>
-<figure>
-<img src="./images/add-staff-to-pool.png" alt="Add to staff pool" /><figcaption aria-hidden="true">Add to staff pool</figcaption>
-</figure>
+<p><img src="./images/add-staff-to-pool.png" /></p>
 <h1 id="event-workflows">Event Workflows</h1>
 <p>Event workflows determine the event or sequence of events that must occur when another action is initiated/completed. For example (contrived), take the <em>Case Created</em> Event. This event triggers two task: Calendar Next Date and Execution of Warrant. Hence, these task will be automatically populated in the task tab when a case is created and show up in the workbasket of all users connected in the <a href="#staff-pool-management">staff pool</a> associated with that case. It will even display how much time it should take to complete each task</p>
-<figure>
-<img src="./images/event-workflows.png" alt="event workflows" /><figcaption aria-hidden="true">event workflows</figcaption>
-</figure>
+<p><img src="./images/event-workflows.png" /></p>
 <h1 id="lookup-tables">Lookup Tables</h1>
 <p>Lookup tables manage all the reference data used to populate the multitude of dropdown menu options present in TT.jim.</p>
 <p>For example when creating a case and one must choose a <em>case type</em>, it is the lookup table below that populates the various case types such as Bail Applications, Indicatable Offences, Anti-Gang Act and more.</p>
-<p><img src="./images/lookup-tables.png" alt="lookup-tables" /> Figure: Lookup table for Case Type</p>
+<p><img src="./images/lookup-tables.png" /> Figure: Lookup table for Case Type</p>
 <h2 id="updating-lookup-table">Updating Lookup Table</h2>
-<p>If the current set of datapoints do not meet your needs, you can update the lookup tables with your own custom data points by clicking/tapping the blue <em>New Data Item</em> button in the left pane. You will then be required to enter a name, short name and description for your new data point. When you are finished clik save.</p>
-<figure>
-<img src="./images/append-lookup-table.png" alt="append-lookup-table" /><figcaption aria-hidden="true">append-lookup-table</figcaption>
-</figure>
-<p>Now, whenever a case is created, you will see the case type we created appear as an option. <img src="./images/custom-case-type.png" alt="custom-case-type" /></p>
+<p>If the current set of data points do not meet your needs, you can update the lookup tables with your own custom data points by clicking/tapping the blue <em>New Data Item</em> button in the left pane. You will then be required to enter a name, short name and description for your new data point. When you are finished click save.</p>
+<p><img src="./images/append-lookup-table.png" /></p>
+<p>Now, whenever a case is created, you will see the case type we created appear as an option. <img src="./images/custom-case-type.png" /></p>
 <p>There are many other lookup tables such as case phase, case status, initiating document and much more.</p>
 <h1 id="thank-you-for-reading">Thank you for Reading!</h1>
 </body>
