@@ -50,7 +50,7 @@
     
 	main header #logo {    
 		display: block;
-		height: 175px;
+		height: 165px;
 		margin: 0 auto;
 	}
 		
@@ -66,10 +66,11 @@
 		border-radius: 15px;
 		background: #FFF;
 		margin: 20px auto;
+		letter-spacing: 1px;
 		position: relative;
 		box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 		top: -55px;
-		color: #afafaf;
+		color: #616e97;
 		font-family: ScalaSans;
 		text-transform: uppercase;
     }
@@ -194,8 +195,11 @@
             width: 175px;
         }
         .flex-container > div.tile a {
-            padding: 10px 10px 0
+            padding: 0
         }
+		.flex-container > div.tile a img {
+			width: 100%;
+		}
     }
 	
 	@media screen and (max-width: 600px) {
@@ -214,11 +218,19 @@
 			margin: 0;
         }
         .flex-container > div.tile a {
-            padding: 10px 10px 0
+            padding: 10px;
+			border: 3px solid #435165;
         }
 		div.tile h1 {line-height:inherit; height:auto}
 		.flex-container > div.tile a img {
+			display:none;
 			width:90px;
+		}
+		#main-section .subtitle {
+		 display:none;
+		}
+		div.tile hr {
+			display:none
 		}
     }
 </style>
@@ -244,7 +256,7 @@
                 </div>
 				<div class='tile'>
                     <a href="https://criminal.ttlawcourts.org"><img src='img/hoj2.png' />
-                        <h1>HIGH CRIMINAL COURT</h1>
+                        <h1>HIGH COURT CRIMINAL</h1>
                         <hr/>
                     </a>
                 </div>
@@ -264,7 +276,7 @@
         </section>
 		<div class="center">
 			<div>
-				<a href="manual" target="_blank" class="manual-link">Click Here to View Manual</a>
+				<a href="manual" target="_blank" style="display:none" class="manual-link">Click Here to View Manual</a>
 			</div>
 			<div>
 				<a href="https://sp.ttlawcourts.org/ttjim/_layouts/15/start.aspx#/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fttjim%2FShared%20Documents%2FTTJIM%5FHow%5FTos&FolderCTID=0x012000B396F07A43F36049B68F0BB8903C4692&View=%7B865B2E2B%2DE9A9%2D40A9%2D9558%2D3A6B1ED29DE8%7D" target="_blank" class="howto-link">TT.JIM How-To's</a>
